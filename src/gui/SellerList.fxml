@@ -29,8 +29,8 @@
           <TableColumn fx:id="tableColumnId" prefWidth="75.0" text="Id" />
           <TableColumn fx:id="tableColumnName" prefWidth="75.0" text="Nome" />
             <TableColumn fx:id="tableColumnEmail" prefWidth="75.0" text="E-mail" />
-            <TableColumn fx:id="tableColumnBirthDate" prefWidth="112.0" text="Data de Nascimento" />
-            <TableColumn fx:id="tableColumnBaseSalary" prefWidth="56.0" text="Salario" />
+            <TableColumn fx:id="tableColumnBirthDate" prefWidth="108.0" text="Data Aniversario" />
+            <TableColumn fx:id="tableColumnBaseSalary" prefWidth="60.0" text="Salario" />
             <TableColumn fx:id="tableColumnEDIT" prefWidth="57.0" />
             <TableColumn fx:id="tableColumnREMOVE" prefWidth="75.0" />
         </columns>
