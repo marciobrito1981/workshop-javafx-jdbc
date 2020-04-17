@@ -30,6 +30,14 @@ public class Utils {
 			return null;
 		}
 	}
+	// Tenta converter para Double, caso contrario retorna nulo
+	public static Double tryParseToDouble(String str) {
+		try {
+			return Double.parseDouble(str);
+		} catch (NumberFormatException e) {
+			return null;
+		}
+	}
 
 	// formatar as colunas no formato de data
 	public static <T> void formatTableColumnDate(TableColumn<T, Date> tableColumn, String format) {
