@@ -92,7 +92,7 @@ public class SellerListController implements Initializable, DataChangeListener {
 		tableColumnName.setCellValueFactory(new PropertyValueFactory<>("name"));
 		tableColumnEmail.setCellValueFactory(new PropertyValueFactory<>("email"));
 		tableColumnBirthDate.setCellValueFactory(new PropertyValueFactory<>("birthDate"));
-		//Utils.formatTableColumnDate(tableColumnBirthDate, "dd/MM/yyyy");
+		Utils.formatTableColumnDate(tableColumnBirthDate, "dd/MM/yyyy");
 		tableColumnBaseSalary.setCellValueFactory(new PropertyValueFactory<>("baseSalary"));
 		Utils.formatTableColumnDouble(tableColumnBaseSalary, 2);
 		
@@ -127,7 +127,7 @@ public class SellerListController implements Initializable, DataChangeListener {
 
 			// carrega a tela de cadastro de Departamento (modal)
 			Stage dialogStage = new Stage();
-			dialogStage.setTitle("Entre com os dados do Departamento");
+			dialogStage.setTitle("Entre com os dados do Vendedor");
 			dialogStage.setScene(new Scene(pane));
 			dialogStage.setResizable(false); // não permite que a janela seja redimensionada
 			dialogStage.initOwner(parentStage);
