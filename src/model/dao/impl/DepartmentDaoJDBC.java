@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 import db.DB;
+import db.DBIntegrityException;
 import db.DbException;
 import model.dao.DepartmentDao;
 import model.dao.SellerDao;
@@ -92,7 +93,7 @@ public class DepartmentDaoJDBC implements DepartmentDao {
 			st.executeUpdate();
 		}
 		catch (SQLException e) {
-			throw new DbException(e.getMessage());
+			throw new DBIntegrityException(e.getMessage());
 		}
 		finally {
 			DB.closeStatement(st);
